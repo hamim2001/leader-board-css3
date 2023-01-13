@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background-color: rgb(208, 216, 216);
+    font-family: 'Poppins', sans-serif;
+}
+.player img{
+    width: 46px;
+    height: 46px;
+}
+
+.player{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.player-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    padding-bottom: 50px;
+}
+.title{
+    color: rgb(53, 53, 131);
+}
+.top-players{
+    background-color: rgb(245, 243, 241);
+    padding: 5px 20px;
+    margin: 0px 380px;
+}
+/* top blog */
+
+.head-2{
+    padding: 60px 0px;
+}
+.image{
+    width: 120px;
+    height: 120px;
+}
+.article-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.by{
+    text-decoration: none;
+}
+/* courses */
+.course-container{
+    background-color: rgb(245, 243, 241);
+    padding: 5px 20px;
+    margin: 0px 380px;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: rgb(145, 139, 139);
+}
+.thumbnail{
+    height: 110px;
+    width: 204px;
+}
+.fa-star{
+    font-size: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.flex{
+    border: none;
+    background-color: rgb(245, 212, 219);
+}
+.duration{
+    color: brown;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(248, 185, 185);
+    font-size: 12px;
+    padding: 5px;
+}
+/* media query */
+@media screen and (max-width: 688px){
+    .top-players{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .player-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid{
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-direction: column;
+    } 
+    .course-container{
+        margin: 0px;
+        height: 1250px;
+    }
+}
